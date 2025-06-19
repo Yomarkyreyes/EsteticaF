@@ -1,0 +1,65 @@
+/* === 320px - 480px: Smartphones === */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+/* === 481px - 768px: Tablets === */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+/* === 769px - 1024px: Laptops pequeños === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* === 1025px - 1200px: Escritorios grandes === */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .tarjetas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* === 1201px y más: Pantallas extragrandes === */
+@media (min-width: 1201px) {
+  .contenido, .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
